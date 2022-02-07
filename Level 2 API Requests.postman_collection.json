@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "30ea6cf4-c9b8-454d-a668-2146b3f6bab0",
+		"name": "Level 2 API Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Intership request 1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "UserCode",
+						"value": "9f2c308b-2b2c-491d-8e6d-fb6e34be0ff5",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/getUserTodos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getUserTodos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Intership request 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "UserCode",
+						"value": "9f2c308b-2b2c-491d-8e6d-fb6e34be0ff5",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"My New task welp 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/addnewtodo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addnewtodo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Intership request 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "UserCode",
+						"value": "9f2c308b-2b2c-491d-8e6d-fb6e34be0ff5",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"My New task welp 2\",\r\n    \"id\": 18,\r\n    \"checked\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/editTodo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"editTodo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Intership request 4",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "UserCode",
+						"value": "9f2c308b-2b2c-491d-8e6d-fb6e34be0ff5",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 18\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/deleteTodo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deleteTodo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
